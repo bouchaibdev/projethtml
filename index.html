@@ -12,7 +12,14 @@
     <!--lire une feuille de style-->
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+
+    <link href="./assets/css/form.css" rel="stylesheet">
+
+    <link href="./assets/css/snackbar.css " rel="stylesheet">
+
+
+
 
     <!--lien vers le code javascript : jquery-->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
@@ -118,9 +125,17 @@
                         <input type="class">
                     </div> 
                     
-                    <input type="moi" name="nom-ctrl" placeholder="votre nom">
-                    <input type="email" name="email-ctrl" placeholder="votre email">
+                    <input type="moi" name="nom-ctrl" placeholder="votre nom" required>
+                    <div class="bad-control hidden">
+                        le champ nom est obligatoire
+                    </div>
+
+                    <input type="email" name="email-ctrl" placeholder="votre email" required>
+                    <div class="bad-control hidden">
+                        le champ email est obligatoire
+                    </div>
                     <input type="text" name="phone-ctrl" placeholder="votre telephone">
+
                     
                     <label for="object-ctrl">objet de votre demande:
                        
@@ -131,6 +146,12 @@
                     <fieldset><label for="lead-clrl">
 
                             comment vous connaissez-nous ?
+
+
+
+
+
+                            
                         </label>
                         <select name="lead-clrl" id="lead-ctrl" size="1">
                             <option value=""> selectionnez....</option>
@@ -138,6 +159,7 @@
                             <option value="2">réseau sociaux</option>
                             <option value="3">autre....</option>
                         </select>
+                         
 
                         <label for="subscribe-ctrl">
                             <input type="checkbox" name="subscribe-ctrl" id="subscribe-ctrl">
@@ -162,7 +184,7 @@
                         <label for="subscribe-ctrl">
                             vous etes interessés par
                             </label>
-                                
+                                <!--
                                 <select name="subjects-ctrl" multiple size="5">
                                     <option value="0">tout!</option>
                                     <option value="1">rien</option>
@@ -173,12 +195,12 @@
                                     <option value="6">l'apero du week end</option>
                                 </select>
 
-
+-->
 
                     </fieldset>
 
 
-                    <button disabled>
+                    <button disabled id="send-button">
                         envoyer
                     </button>
 
@@ -221,6 +243,16 @@
 
         </footer>
     </div>
+
+
+
+    <!--Templates : snackbar and others-->
+    <template id="snackbar">
+        <div class="snackbar">
+            votre message a envoyer
+        </div>
+    </template>
+
 </body>
 
 
