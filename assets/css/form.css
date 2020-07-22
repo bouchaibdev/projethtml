@@ -1,0 +1,15 @@
+/**
+*form.css
+*specific design for forms
+**/
+
+/**
+* tell div have hidden class in a form element to be not display
+**/
+form div.hidden{
+    display: none;
+}
+
+form div.bad-control {
+    color: rgba(255,10,10,1);
+}
