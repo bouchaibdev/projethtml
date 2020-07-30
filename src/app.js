@@ -14,6 +14,21 @@ $(document).ready(
             'email-ctrl'
 
         ]
+
+        $('.cross').on(
+            'click',
+            (event) => {
+                console.log('click detected!')
+                $('.outer-modal').addClass('hide-outer') // Ajoute la classe hide-outer à l'élément qui porte la classe .outer-modal
+            })
+
+            $('.contact').on(
+                'click',
+                (event) => { 
+                    console.log('click detected!')
+                    $('.outer-modal').removeClass('hide-outer') 
+                })
+
         //Set an event handler on form
         $('#contact-form').on(
             'change keyup',

@@ -8,7 +8,7 @@ body{margin: 05em;}
 h1, p{border:solid 1px green;}
 strong, em{color: blue;}
 /**
-*selecteur:ID commencepar le signe#**/
+*selecteur:ID commence par le signe #**/
 
 #page-container{background-color: rgba(128,128,128);
 } 
@@ -24,6 +24,10 @@ strong, em{color: blue;}
     * - lien dans le pied de pages:
     * - texte noi,
     * - pas de soulignement **/
+    .hide-outer {
+
+        display: none;
+    }
 
     
         
