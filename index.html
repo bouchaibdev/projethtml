@@ -18,6 +18,7 @@
 
     <link href="./assets/css/snackbar.css " rel="stylesheet">
 
+    <link href="./assets/css/modal.css" rel="stylesheet">
 
 
 
@@ -29,14 +30,14 @@
 
 <body>
     <!--contenu visible du document-->
-    
-    
+
+
 
     <div id="page-container" class="container">
         <header class="row">
             <div class="logo col-12 col-md-2">
                 <a href="#" title="Accueil my litle company">
-                    
+
                 </a>
             </div>
         </header>
@@ -44,16 +45,16 @@
         <!--h1: heading level-->
         <p>
             <!--paragraphe de contenu-->
-            
+
             <a href="title="> <img src="assets/logo/logo/Codev19jaune.png"></a>
-           
+
             <img src="assets/image/image4.jpg">
             <strong>litle company</strong>
             est une
             <em>societe de services </em>
 
             my litle company société de services numérique
-           
+
         <nav>
             <ul>
 
@@ -82,7 +83,7 @@
 
 
 
-                 <article class="col-12 col-md-4"  >
+                <article class="col-12 col-md-4">
                     <header>
                         <h2>integration</h2>
                         <p id="developpement">
@@ -91,40 +92,40 @@
 
                     </header>
 
-                    </article>
-                    
+                </article>
 
 
-                    <article class="col-12 col-md-4">
-                        <header>
-                            <h2>consulting</h2>
 
-                            <p id="developpement">
-                                my little company propose une gamme de développement sur mesure
-                            </p>
+                <article class="col-12 col-md-4">
+                    <header>
+                        <h2>consulting</h2>
 
-                        
-                        </header>
+                        <p id="developpement">
+                            my little company propose une gamme de développement sur mesure
+                        </p>
 
 
-                        <figure>
-                            
-                        
-                            
-                            </code>
-                        </figure>
+                    </header>
 
-                    </article>
+
+                    <figure>
+
+
+
+                        </code>
+                    </figure>
+
+                </article>
 
             </section>
             <aside>
                 <!--Formulaire de contact-->
-               
+
                 <form method="get" action="" id="contact-form">
                     <div class="form-group">
                         <input type="class">
-                    </div> 
-                    
+                    </div>
+
                     <input type="moi" name="nom-ctrl" placeholder="votre nom" required>
                     <div class="bad-control hidden">
                         le champ nom est obligatoire
@@ -136,10 +137,10 @@
                     </div>
                     <input type="text" name="phone-ctrl" placeholder="votre telephone">
 
-                    
+
                     <label for="object-ctrl">objet de votre demande:
-                       
-                        
+
+
                     </label>
                     <textarea name="objet-ctrl" id="objet-ctrl"></textarea>
 
@@ -151,7 +152,7 @@
 
 
 
-                            
+
                         </label>
                         <select name="lead-clrl" id="lead-ctrl" size="1">
                             <option value=""> selectionnez....</option>
@@ -159,7 +160,7 @@
                             <option value="2">réseau sociaux</option>
                             <option value="3">autre....</option>
                         </select>
-                         
+
 
                         <label for="subscribe-ctrl">
                             <input type="checkbox" name="subscribe-ctrl" id="subscribe-ctrl">
@@ -183,8 +184,8 @@
 
                         <label for="subscribe-ctrl">
                             vous etes interessés par
-                            </label>
-                                <!--
+                        </label>
+                        <!--
                                 <select name="subjects-ctrl" multiple size="5">
                                     <option value="0">tout!</option>
                                     <option value="1">rien</option>
@@ -242,6 +243,107 @@
             <a href="https://www.adrar-formation.com" target="new" title="lien vers adrar"></a>
 
         </footer>
+    </div>
+    <!-- modale : box-->
+    <div class="outer-modal">
+
+        <div class="inner-modal">
+
+            <div class="barre-orizontal">
+
+                <div class="cross">X</div>
+<div class="">
+    <form method="get" action="" id="contact-form">
+        <div class="form-group">
+            <input type="class">
+        </div>
+
+        <input type="moi" name="nom-ctrl" placeholder="votre nom" required>
+        <div class="bad-control hidden">
+            le champ nom est obligatoire
+        </div>
+
+        <input type="email" name="email-ctrl" placeholder="votre email" required>
+        <div class="bad-control hidden">
+            le champ email est obligatoire
+        </div>
+        <input type="text" name="phone-ctrl" placeholder="votre telephone">
+
+
+        <label for="object-ctrl">objet de votre demande:
+
+
+        </label>
+        <textarea name="objet-ctrl" id="objet-ctrl"></textarea>
+
+        <fieldset><label for="lead-clrl">
+
+                comment vous connaissez-nous ?
+
+
+
+
+
+
+            </label>
+            <select name="lead-clrl" id="lead-ctrl" size="1">
+                <option value=""> selectionnez....</option>
+                <option value="1">moteur de recherche</option>
+                <option value="2">réseau sociaux</option>
+                <option value="3">autre....</option>
+            </select>
+
+
+            <label for="subscribe-ctrl">
+                <input type="checkbox" name="subscribe-ctrl" id="subscribe-ctrl">
+                souscrire la news letter
+            </label>
+            <label>
+                vous etes....
+            </label for="professional">
+
+            <input type="radio" name="whoreyou" value="0" id="professionnal">professionnel
+
+            </label>
+
+            <label for="individual"></label>
+
+            <input type="radio" name="whoreyou" value="0" id="individual">particulier
+
+            <label>
+                <input type="radio" name="whoreyou" value="2" id="both">les deux
+            </label>
+
+            <label for="subscribe-ctrl">
+                vous etes interessés par
+            </label>
+            <!--
+                    <select name="subjects-ctrl" multiple size="5">
+                        <option value="0">tout!</option>
+                        <option value="1">rien</option>
+                        <option value="2">des trucs</option>
+                        <option value="3">autres chose</option>
+                        <option value="4">la meteo</option>
+                        <option value="5">les vacances</option>
+                        <option value="6">l'apero du week end</option>
+                    </select>
+
+-->
+
+        </fieldset>
+
+
+        <button disabled id="send-button">
+            envoyer
+        </button>
+
+    </form>
+</div>
+
+                <div class="visible-scrollbar"></div>
+            </div>
+        </div>
+
     </div>
 
 
